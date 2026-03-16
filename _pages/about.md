@@ -2,6 +2,10 @@
 permalink: /
 title: "Momchil E. Molnar"
 author_profile: true
+header:
+  overlay_image: /images/IMG_4212.jpg
+  overlay_filter: 0.45
+  caption: "Solar Physics • Spectropolarimetry • Machine Learning"
 redirect_from: 
   - /about/
   - /about.html
