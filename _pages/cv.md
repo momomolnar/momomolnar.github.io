@@ -66,11 +66,11 @@ Skills and Languages
 
 Grants and Fellowships (Selected)
 ======
-* NSF SHINE Grant 2401069 (PI, $394k, October 2024 - October 2026)
-* NCAR Advanced Study Program Postdoctoral Fellowship (~$300k, October 2022 - September 2024)
-* NASA FINESST Fellowship ($90k, September 2020 - August 2022)
-* DKIST Ambassador Graduate Fellowship ($110k, August 2019 - August 2022)
-* Hale Graduate Fellowship, University of Colorado Boulder ($160k, August 2016 - August 2019)
+* NSF SHINE Grant 2401069 (PI, October 2024 - October 2026)
+* NCAR Advanced Study Program Postdoctoral Fellowship (October 2022 - September 2024)
+* NASA FINESST Fellowship (September 2020 - August 2022)
+* DKIST Ambassador Graduate Fellowship (August 2019 - August 2022)
+* Hale Graduate Fellowship, University of Colorado Boulder (August 2016 - August 2019)
 
 Service and Outreach (Selected)
 ======
