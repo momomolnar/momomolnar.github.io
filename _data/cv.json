@@ -1,152 +1,312 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Momchil E. Molnar",
+    "label": "Research Scientist, Solar Physics",
+    "email": "momchil.molnar@swri.org",
+    "phone": "+1-303-226-9982",
+    "website": "https://momomolnar.github.io",
+    "summary": "Research Scientist at Southwest Research Institute working on solar transition-region and coronal diagnostics, spectropolarimetry, and physics-informed machine learning for magnetic field inversions.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "address": "1301 Walnut St Suite 400",
+      "postalCode": "80302",
+      "city": "Boulder",
       "countryCode": "US",
-      "region": ""
+      "region": "CO"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "G67t_fEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=G67t_fEAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "0000-0003-0583-0516",
+        "url": "https://orcid.org/0000-0003-0583-0516"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "momomolnar",
+        "url": "https://github.com/momomolnar"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "name": "Southwest Research Institute",
+      "company": "Southwest Research Institute",
+      "position": "Research Scientist",
+      "startDate": "2024-10",
+      "endDate": "Present",
+      "summary": "Solar transition-region and coronal diagnostics using SolO/SPICE; development of coronal magnetic-field diagnostics and physics-informed ML methods for spectropolarimetry.",
+      "highlights": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "name": "NCAR High Altitude Observatory",
+      "company": "NCAR High Altitude Observatory",
+      "position": "Advanced Study Program Postdoctoral Fellow",
+      "startDate": "2022-10",
+      "endDate": "2024-10",
+      "summary": "Worked on Hanle-effect magnetic diagnostics and neural-field inversion tools. PI of the CHEESE experiment during the April 8, 2024 total solar eclipse.",
+      "highlights": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "name": "LASP, University of Colorado / National Solar Observatory",
+      "company": "LASP, University of Colorado / National Solar Observatory",
+      "position": "Graduate Research Assistant",
+      "startDate": "2016-09",
+      "endDate": "2022-08",
+      "summary": "Used DST, ALMA, IRIS, and Hi-C 2.1 observations with radiative transfer modeling to test chromospheric wave-heating theories.",
+      "highlights": []
+    },
+    {
+      "name": "MIT Kavli Institute for Astrophysics and Space Research",
+      "company": "MIT Kavli Institute for Astrophysics and Space Research",
+      "position": "Undergraduate Research Assistant (UROP)",
+      "startDate": "2013-01",
+      "endDate": "2016-05",
+      "summary": "Research on stellar pulsations, cataclysmic variable evolution, and data mining.",
+      "highlights": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "University of Colorado Boulder",
+      "area": "PhD, Astrophysical and Planetary Sciences",
+      "studyType": "",
+      "startDate": "2018-11",
+      "endDate": "2022-08",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "University of Colorado Boulder",
+      "area": "MSc, Astrophysical and Planetary Sciences (high-pass distinction)",
+      "studyType": "",
+      "startDate": "2016-08",
+      "endDate": "2018-10",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Massachusetts Institute of Technology",
+      "area": "BSc, Physics",
+      "studyType": "",
+      "startDate": "2012-09",
+      "endDate": "2016-06",
+      "gpa": null,
+      "courses": [
+        "Undergraduate thesis: Automatic detection of periodic sources in the K2 data sets"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming and Numerical Methods",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "IDL",
+        "OpenMP",
+        "MPI",
+        "scikit-learn",
+        "PyTorch",
+        "Mathematica"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Bulgarian",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research Focus",
+      "keywords": [
+        "Solar transition region",
+        "Coronal magnetometry",
+        "Hanle-effect diagnostics",
+        "Spectropolarimetric inversions",
+        "Physics-informed machine learning"
+      ]
+    },
+    {
+      "name": "Service and Outreach",
+      "keywords": [
+        "DKIST TAC panelist (2025)",
+        "NASA FINESST review panelist (2025)",
+        "Reviewer for ApJ, ApJL, MNRAS, A&A, Solar Physics",
+        "Skype-a-Scientist presenter (2018-present)"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Wave observations with the Cryo-NIRSP instruments at high resolution",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Molnar, M., Gilly, C., Morton, R., et al.; 999, 34."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "A new method of deriving Doppler velocities for Solar Orbiter SPICE",
+      "publisher": "Astronomy and Astrophysics",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Plowman, J., Hassler, D., Molnar, M., et al.; 706, 171."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "FIP Bias in an Emerging Active Region as observed in SPICE Synoptic Observation",
+      "publisher": "Astronomy and Astrophysics",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Varesano, T., Hassler, D., Zambrana Prado, N., Laming, J. M., Plowman, J., Molnar, M., Barczynski, K.; 706, 155."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Neutral Helium detection during the 2024 Solar Eclipse",
+      "publisher": "Solar Physics",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "Molnar, M., Casini, R., Bryans, P., Berkey, B., Tyson, K.; 300, 88."
+    },
+    {
+      "name": "PINN ME: A Physics-Informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields",
+      "publisher": "Astrophysical Journal Letters",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "Jarolim, R., Molnar, M., Tremblay, B., Centeno, R., Rempel, M.; 985, L7."
+    },
+    {
+      "name": "First DKIST Cryo-NIRSP wave observations",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "Morton, R., Molnar, M., Cranmer, S., Schad, T.; 982, 104."
+    },
+    {
+      "name": "Magnetic Diagnostics of Prominence Eruptions through the Hanle Effect of the He I 1083 nm Line",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": "Molnar, M., Casini, R.; 977, 1."
+    },
+    {
+      "name": "Constraining the balance of radiative losses and acoustic flux in the solar chromosphere with multi-line spectral inversions",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": "da Silva Santos, J. M., Molnar, M., Milic, I., de la Cruz Rodriguez, J., Reardon, K.; 976, 21."
+    },
+    {
+      "name": "MHD Wave Mode Conversion in the Solar Corona",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2023-01-01",
+      "website": "",
+      "summary": "Cranmer, S., Molnar, M.; 955, 68."
+    },
+    {
+      "name": "Constraining the systematics of acoustic wave heating estimates in the solar chromosphere",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2023-01-01",
+      "website": "",
+      "summary": "Molnar, M., Cranmer, S., Reardon, K., Kowalski, A., Milic, I.; 945, 154."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
+      "name": "Case Western Reserve University Physics Colloquium",
+      "event": "Invited colloquium",
+      "date": "2025-11-01",
+      "location": "Case Western Reserve University",
       "description": ""
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
+      "name": "Coronal Plasma Abundance Evolution during the M7.6 Flare observed on September 30 2024",
+      "event": "National Solar Observatory Colloquium",
+      "date": "2025-09-01",
+      "location": "Boulder, CO, USA",
+      "description": "Invited talk."
+    },
+    {
+      "name": "Spectropolarimetry of the He I 1083: using the unsaturated Hanle effect for coronal magnetometry",
+      "event": "Solar Polarization Workshop 11",
+      "date": "2025-09-01",
+      "location": "Prague, Czech Republic",
       "description": ""
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
+      "name": "Spectropolarimetry of the He I 1083: using the unsaturated Hanle effect for coronal magnetometry",
+      "event": "NLTE Inversions Workshop",
+      "date": "2025-08-01",
+      "location": "University of Glasgow, UK",
       "description": ""
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
+      "name": "SPICE Observations supporting the 2024 Eclipse",
+      "event": "2nd 2024 Solar Eclipse Workshop",
+      "date": "2025-08-01",
+      "location": "CfA, Boston, MA, USA",
+      "description": ""
+    },
+    {
+      "name": "Analysis of the Solar Plasma Abundance Evolution During the M7.7 Flare Event of September 30, 2024",
+      "event": "AAS/SPD Meeting",
+      "date": "2025-06-01",
+      "location": "USA",
+      "description": ""
+    },
+    {
+      "name": "Spectropolarimetry across the solar atmosphere - Polarization as a solar magnetometer",
+      "event": "Institute of Astronomy Colloquium, Bulgarian Academy of Sciences",
+      "date": "2025-04-01",
+      "location": "Sofia, Bulgaria",
+      "description": ""
+    },
+    {
+      "name": "Detection of Helium with the CHEESE eclipse experiment",
+      "event": "AGU Fall Meeting",
+      "date": "2024-12-01",
+      "location": "Washington, DC, USA",
       "description": ""
     }
   ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "NSF SHINE Grant 2401069",
+      "category": "grant",
+      "date": "2024-10-01",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Principal Investigator, $394k, October 2024 - October 2026."
+    },
+    {
+      "name": "NCAR Advanced Study Program Postdoctoral Fellowship",
+      "category": "fellowship",
+      "date": "2022-10-01",
+      "url": "",
+      "description": "Approx. $300k, October 2022 - September 2024."
+    },
+    {
+      "name": "NASA FINESST Fellowship",
+      "category": "fellowship",
+      "date": "2020-09-01",
+      "url": "",
+      "description": "$90k, September 2020 - August 2022."
     }
   ]
 }
