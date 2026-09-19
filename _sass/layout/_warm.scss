@@ -1,0 +1,884 @@
+/* ==========================================================================
+   WARM LAYER
+   Visual treatment layered on top of the base theme. Everything here is
+   additive: remove the "layout/warm" import from assets/css/main.scss to get
+   the plain theme back.
+   ========================================================================== */
+
+:root {
+  --warm-masthead-bg: rgba(255, 250, 246, 0.82);
+  --warm-nav-pill: rgba(221, 122, 99, 0.12);
+  /* text that sits on top of a filled accent (button, tag, active pill) */
+  --warm-on-accent: #fff;
+}
+
+html[data-theme="dark"] {
+  --warm-masthead-bg: rgba(29, 19, 21, 0.84);
+  --warm-nav-pill: rgba(229, 131, 109, 0.16);
+  /* the dark theme's accents are light, so ink on them has to be dark */
+  --warm-on-accent: #24171a;
+}
+
+/* ==========================================================================
+   Canvas and typography
+   ========================================================================== */
+
+/* html already carries the canvas background colour, so the wash goes there
+   too - otherwise it would be clipped to the (shorter) body box. */
+html {
+  background-image: var(--warm-page-wash);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+/* The masthead is fixed, so in-page anchors need to clear it */
+h1[id], h2[id], h3[id], h4[id] {
+  scroll-margin-top: calc(#{$masthead-height} + 1.25rem);
+}
+
+h2[id]:target,
+h3[id]:target {
+  animation: warm-target-flash 1.6s ease-out 1;
+}
+
+@keyframes warm-target-flash {
+  0%   { color: var(--warm-accent); }
+  100% { color: var(--warm-heading); }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--warm-heading);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--warm-accent-soft);
+  color: var(--warm-heading);
+}
+
+/* Section rules: a warm gradient hairline instead of the flat grey border */
+.page__content > h2,
+.archive > h2 {
+  position: relative;
+  margin-top: 2.2em;
+  padding-bottom: 0.4em;
+  font-size: $type-size-3;
+  border-bottom: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--warm-rule);
+  }
+}
+
+/* The publications page prints an <hr> under each year heading */
+.archive > h2 + hr {
+  display: none;
+}
+
+.page__content a,
+.archive a {
+  text-decoration-color: var(--warm-accent-soft);
+  text-underline-offset: 0.16em;
+
+  &:hover {
+    text-decoration-color: var(--global-link-color-hover);
+  }
+}
+
+blockquote {
+  padding: 0.6em 1.2em;
+  border-left: 4px solid var(--warm-accent);
+  background: var(--warm-surface-alt);
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+hr {
+  border-top: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--warm-rule);
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+
+.masthead {
+  background: var(--warm-masthead-bg);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  backdrop-filter: saturate(160%) blur(12px);
+
+  &:after {
+    height: 2px;
+    background: var(--warm-rule);
+    opacity: 0.9;
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    border-radius: 999px;
+    padding: 0.4rem 0.7rem;
+    margin: 0 0.15rem;
+    font-weight: 500;
+  }
+
+  button {
+    background-image: var(--warm-btn-gradient);
+    background-color: transparent;
+    border-radius: 999px;
+    color: var(--warm-on-accent);
+  }
+
+  .visible-links {
+    li {
+      &:first-child a {
+        margin-left: 0;
+        padding-left: 0;
+        font-family: $header-font-family;
+        font-size: $type-size-4;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+        color: var(--warm-heading);
+      }
+    }
+
+    a {
+      &:before {
+        left: 0.7rem;
+        height: 3px;
+        width: calc(100% - 1.4rem);
+        border-radius: 3px;
+        background: var(--warm-btn-gradient);
+      }
+
+      &:hover {
+        background-color: var(--warm-nav-pill);
+      }
+    }
+
+    li:first-child a:hover {
+      background-color: transparent;
+    }
+  }
+
+  .hidden-links {
+    background: var(--warm-surface);
+    border-color: var(--global-border-color);
+    box-shadow: var(--warm-shadow-lift);
+
+    a:hover {
+      background: var(--warm-nav-pill);
+    }
+
+    &:after {
+      border-color: var(--warm-surface) transparent;
+    }
+  }
+}
+
+.masthead__menu-item {
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   Hero banner
+   ========================================================================== */
+
+.page__hero--overlay {
+  position: relative;
+  overflow: hidden;
+  padding: 4em 0 3.25em;
+  margin-bottom: 2.5em;
+  background-image: var(--warm-hero-wash);
+  background-size: cover;
+  border-bottom: 1px solid var(--global-dark-border-color);
+
+  /* soft "corona" glow in the upper right */
+  &:before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -6%;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%,
+                rgba(255, 255, 255, 0.30) 0%,
+                rgba(255, 236, 216, 0.16) 45%,
+                rgba(255, 236, 216, 0) 72%);
+    pointer-events: none;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page__title,
+  .page__meta,
+  .page__lead {
+    color: var(--warm-hero-ink);
+    text-shadow: none;
+  }
+
+  .page__title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .page__lead {
+    color: var(--warm-hero-ink-soft);
+  }
+
+  a {
+    color: var(--warm-hero-ink);
+  }
+}
+
+.page__hero-caption {
+  right: auto;
+  left: 0;
+  bottom: 0;
+  padding: 6px 16px;
+  color: var(--warm-hero-ink-soft);
+  font-family: $global-font-family;
+  font-size: $type-size-7;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  background: transparent;
+  opacity: 1;
+  border-radius: 0;
+
+  a {
+    color: inherit;
+  }
+}
+
+/* ==========================================================================
+   Sidebar author card
+   ========================================================================== */
+
+/* The base theme pins the sidebar to the viewport (position: fixed), which
+   makes the avatar sit on top of the page hero. Sticky keeps the "follows you
+   down the page" behaviour without escaping #main. */
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .sidebar {
+    position: sticky;
+    top: calc(#{$masthead-height} + 1rem);
+    height: auto;
+    max-height: calc(100vh - #{$masthead-height} - 2rem);
+    padding-top: 0;
+  }
+}
+
+.sidebar {
+  .author__avatar img {
+    width: 100%;
+    max-width: 190px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 26%;
+    padding: 0;
+    border: 4px solid var(--warm-surface);
+    border-radius: 18px;
+    box-shadow: var(--warm-shadow);
+  }
+
+  .author__name {
+    font-family: $header-font-family;
+    font-size: $type-size-4;
+    font-weight: 700;
+    color: var(--warm-heading);
+  }
+
+  .author__bio {
+    display: inline-block;
+    padding: 0.2em 0.7em;
+    color: var(--warm-chip-ink);
+    background: var(--warm-chip-bg);
+    border-radius: 999px;
+    font-size: $type-size-6;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .author__urls:after {
+    border-color: var(--warm-surface) transparent;
+  }
+
+  .author__urls {
+    li {
+      padding: 1px 0;
+    }
+
+    /* location / employer lines are long enough to overflow the 250px rail */
+    .author__desktop {
+      display: flex;
+      align-items: baseline;
+      white-space: normal;
+    }
+
+    a {
+      border-radius: 8px;
+      padding-left: 6px;
+      margin-left: -6px;
+      font-size: $type-size-6;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        background: var(--warm-nav-pill);
+      }
+    }
+
+    .fas, .fab, .far, .ai {
+      color: var(--warm-accent);
+    }
+  }
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  padding: 0.6em 1.15em;
+  color: var(--warm-on-accent) !important;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
+  background-image: var(--warm-btn-gradient);
+  background-color: transparent;
+  box-shadow: var(--warm-shadow);
+
+  &:hover {
+    background-image: var(--warm-btn-gradient-hover);
+    background-color: transparent;
+    box-shadow: var(--warm-shadow-lift);
+    transform: translateY(-1px);
+  }
+
+  &--inverse {
+    background-image: none;
+    background-color: var(--warm-surface);
+    color: var(--warm-heading) !important;
+    border: 1px solid var(--global-dark-border-color) !important;
+
+    &:hover {
+      background-image: none;
+      background-color: var(--warm-surface-alt);
+      color: var(--warm-heading) !important;
+    }
+  }
+
+  &--warm {
+    background-image: var(--warm-btn-gradient);
+    color: var(--warm-on-accent) !important;
+  }
+
+  &--warm-outline {
+    background-image: none;
+    background-color: transparent;
+    color: var(--warm-accent-strong) !important;
+    border: 1.5px solid var(--warm-accent) !important;
+    box-shadow: none;
+
+    &:hover {
+      background-image: none;
+      background-color: var(--warm-nav-pill);
+      color: var(--warm-accent-strong) !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   Archive lists (publications, talks, portfolio)
+   ========================================================================== */
+
+.archive .list__item {
+  margin-bottom: 1em;
+  padding: 1.1em 1.3em;
+  background: var(--warm-surface);
+  border: 1px solid var(--global-border-color);
+  border-left: 4px solid var(--warm-accent-soft);
+  border-radius: $border-radius;
+  box-shadow: var(--warm-shadow);
+  transition: $global-transition;
+
+  &:hover {
+    border-left-color: var(--warm-accent);
+    box-shadow: var(--warm-shadow-lift);
+    transform: translateY(-2px);
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    font-family: $header-font-family;
+    font-size: $type-size-4;
+    line-height: 1.3;
+
+    a {
+      color: var(--warm-heading);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-link-color);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .page__meta,
+  .page__date {
+    margin-top: 0.35em;
+    font-size: $type-size-6;
+  }
+
+  /* "Published in <venue>, <year>" */
+  .archive__item-meta {
+    margin: 0.3em 0 0.6em;
+    font-size: $type-size-6;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--warm-accent-strong);
+
+    i {
+      font-style: normal;
+    }
+  }
+
+  /* talk entries: "<type>, <venue>, <location>" */
+  .archive__item-venue {
+    margin: 0.15em 0 0.7em;
+    font-size: $type-size-6;
+    font-weight: 600;
+    color: var(--warm-accent-strong);
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0.6em;
+    color: var(--global-text-color);
+  }
+
+  /* citation + download links sit quietly under the entry */
+  .archive__item-citation {
+    margin: 0;
+    padding-top: 0.6em;
+    border-top: 1px solid var(--global-border-color);
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.page__footer {
+  background-color: var(--global-footer-bg-color);
+  border-top: 0;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--warm-rule);
+  }
+}
+
+.page__footer-follow li {
+  letter-spacing: 0.06em;
+}
+
+/* ==========================================================================
+   CV page components
+   ========================================================================== */
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 0 0 1.8em;
+
+  .btn {
+    margin-bottom: 0;
+  }
+}
+
+.cv-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75em;
+  margin-bottom: 2em;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.cv-stat {
+  padding: 0.9em 1em;
+  text-align: center;
+  background: var(--warm-surface);
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  box-shadow: var(--warm-shadow);
+
+  &__num {
+    display: block;
+    font-family: $header-font-family;
+    font-size: $type-size-2;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--warm-accent-strong);
+  }
+
+  &__label {
+    display: block;
+    margin-top: 0.2em;
+    font-size: $type-size-7;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+}
+
+.cv-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 2.5em;
+  padding: 0.9em 1em;
+  background: var(--warm-surface-alt);
+  border-radius: $border-radius;
+
+  a {
+    padding: 0.28em 0.8em;
+    font-size: $type-size-6;
+    font-weight: 600;
+    color: var(--warm-chip-ink);
+    background: var(--warm-surface);
+    border: 1px solid var(--global-border-color);
+    border-radius: 999px;
+    text-decoration: none;
+    transition: $global-transition;
+
+    &:hover {
+      color: var(--warm-on-accent);
+      background: var(--warm-accent);
+      border-color: var(--warm-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+.cv-timeline {
+  position: relative;
+  margin: 1.5em 0 2.5em;
+  padding-left: 1.35em;
+  border-left: 2px solid var(--warm-accent-soft);
+}
+
+.cv-item {
+  position: relative;
+  margin-bottom: 1.6em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1.76em;
+    top: 0.45em;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--warm-accent);
+    box-shadow: 0 0 0 4px var(--global-bg-color);
+  }
+
+  &__when {
+    margin: 0 0 0.15em;
+    font-size: $type-size-7;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-accent-strong);
+  }
+
+  &__role {
+    margin: 0 0 0.1em;
+    font-size: $type-size-4;
+    line-height: 1.25;
+  }
+
+  &__org {
+    margin: 0;
+    font-weight: 500;
+    color: var(--global-text-color);
+  }
+
+  &__note {
+    max-width: 78ch;
+    margin: 0.45em 0 0;
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+  }
+}
+
+.cv-cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.9em;
+  margin: 1.5em 0 2.5em;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cv-card {
+  padding: 1em 1.2em;
+  background: var(--warm-surface);
+  border: 1px solid var(--global-border-color);
+  border-top: 3px solid var(--warm-accent);
+  border-radius: $border-radius;
+  box-shadow: var(--warm-shadow);
+  transition: $global-transition;
+
+  &:hover {
+    box-shadow: var(--warm-shadow-lift);
+    transform: translateY(-2px);
+  }
+
+  &__title {
+    margin: 0 0 0.35em;
+    font-size: $type-size-5;
+    line-height: 1.3;
+  }
+
+  &__meta {
+    margin: 0;
+    font-weight: 600;
+    color: var(--warm-accent-strong);
+    font-size: $type-size-6;
+  }
+
+  &__when {
+    margin: 0.15em 0 0;
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+  }
+}
+
+.cv-tag {
+  display: inline-block;
+  padding: 0.05em 0.6em;
+  font-size: $type-size-7;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--warm-on-accent);
+  background: var(--warm-accent);
+  border-radius: 999px;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+.cv-chip-group {
+  margin-bottom: 1.4em;
+
+  &__title {
+    margin: 0 0 0.5em;
+    font-size: $type-size-4;
+  }
+}
+
+.cv-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin: 0;
+}
+
+.cv-chip {
+  padding: 0.3em 0.85em;
+  font-size: $type-size-6;
+  font-weight: 600;
+  color: var(--warm-chip-ink);
+  background: var(--warm-chip-bg);
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+
+  em {
+    font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+}
+
+/* Numbered CV lists (publications, talks, posters, proposals) */
+.archive ol {
+  counter-reset: cv-counter;
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    counter-increment: cv-counter;
+    position: relative;
+    margin-bottom: 0.7em;
+    padding: 0 0 0 2.9em;
+    line-height: 1.55;
+
+    &:before {
+      content: counter(cv-counter);
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2em;
+      height: 2em;
+      font-family: $header-font-family;
+      font-size: $type-size-6;
+      font-weight: 700;
+      color: var(--warm-accent-strong);
+      background: var(--warm-chip-bg);
+      border-radius: 50%;
+    }
+
+    strong {
+      color: var(--warm-heading);
+    }
+  }
+}
+
+/* Bulleted CV lists get a warm marker too */
+.archive ul > li::marker {
+  color: var(--warm-accent);
+}
+
+/* ==========================================================================
+   Lead paragraph (opt in with class="page__intro")
+   ========================================================================== */
+
+.page__intro {
+  font-size: $type-size-4;
+  line-height: 1.55;
+  color: var(--global-text-color);
+}
+
+/* ==========================================================================
+   Home page research cards
+   ========================================================================== */
+
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.9em;
+  margin: 1.5em 0 2.5em;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.focus-card {
+  padding: 1.1em 1.3em;
+  background: var(--warm-surface);
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  box-shadow: var(--warm-shadow);
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--warm-accent);
+    box-shadow: var(--warm-shadow-lift);
+    transform: translateY(-2px);
+  }
+
+  &__title {
+    position: relative;
+    margin: 0 0 0.45em;
+    padding-left: 0.85em;
+    font-size: $type-size-5;
+    line-height: 1.3;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.28em;
+      width: 4px;
+      height: 0.9em;
+      border-radius: 4px;
+      background: var(--warm-btn-gradient);
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+  }
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-top: 2em;
+
+  .btn {
+    margin-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   Reduced motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  h2[id]:target,
+  h3[id]:target {
+    animation: none;
+  }
+
+  .btn:hover,
+  .archive .list__item:hover,
+  .cv-card:hover,
+  .focus-card:hover {
+    transform: none;
+  }
+}
