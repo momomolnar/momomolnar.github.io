@@ -45,6 +45,20 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'publications' and page.figure %}
+          <figure class="pub-figure">
+            <img src="{{ page.figure | prepend: '/images/' | prepend: base_path }}"
+                 alt="{{ page.figure_alt | default: page.title | escape }}">
+            <figcaption>
+              {% if page.figure_credit_url %}<a href="{{ page.figure_credit_url }}">{{ page.figure_credit }}</a>{% else %}{{ page.figure_credit }}{% endif %}
+            </figcaption>
+          </figure>
+        {% endif %}
+
+        {% if page.collection == 'publications' and page.summary %}
+          <p class="pub-summary">{{ page.summary }}</p>
+        {% endif %}
+
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
