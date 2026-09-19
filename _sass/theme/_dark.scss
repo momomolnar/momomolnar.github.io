@@ -1,31 +1,44 @@
 /* ==========================================================================
-   DARK THEME
+   DARK THEME - warm dusk (ember orange / muted red / deep maroon)
    ========================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
+/* Warm dark palette */
+$dusk-900                   : #1d1315;  /* page background   */
+$dusk-800                   : #261a1d;  /* raised surface    */
+$dusk-700                   : #322225;  /* sunken surface    */
+$dusk-600                   : #4a3134;  /* borders           */
+$dusk-500                   : #6b4642;  /* strong borders    */
+$ember-300                  : #f5c9a8;
+$ember-400                  : #efa77f;  /* light orange      */
+$ember-500                  : #e5836d;  /* light red         */
+$ember-600                  : #cf6a63;
+$dusk-text                  : #f8e9e0;
+$dusk-text-light            : #cfa899;
+
+/* Legacy grays kept so vendor partials that reference them keep compiling */
+$gray                       : #a37a72;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$background                 : $dusk-900;
+$background-light           : $dusk-700;
+$background-lighter         : $dusk-600;
+$text                       : $dusk-text;
+$link                       : $ember-400;
+$link-dark                  : $ember-300;
+$link-light                 : $ember-500;
 
 /* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$danger-color               : #d4564f;
+$info-color                 : #c07a4e;
+$notice-color               : #a37a72;
+$success-color              : #8a9a5b;
+$warning-color              : #e0913f;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$border-radius              : 10px;
+$box-shadow                 : 0 1px 2px rgba(124, 47, 60, 0.08);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -35,20 +48,43 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #{$ember-600};
+    --global-bg-color                   : #{$dusk-900};
+    --global-footer-bg-color            : #{$dusk-800};
+    --global-border-color               : #{$dusk-600};
+    --global-dark-border-color          : #{$dusk-500};
+    --global-code-background-color      : #{$dusk-700};
+    --global-code-text-color            : #{$ember-300};
+    --global-fig-caption-color          : #{$dusk-text-light};
+    --global-link-color                 : #{$ember-400};
+    --global-link-color-hover           : #{$ember-300};
+    --global-link-color-visited         : #{$ember-500};
+    --global-masthead-link-color        : #{$dusk-text};
+    --global-masthead-link-color-hover  : #{$ember-400};
+    --global-text-color                 : #{$dusk-text};
+    --global-text-color-light           : #{$dusk-text-light};
+    --global-thead-color                : #{$dusk-700};
+
+    /* Warm accents used by the custom layer (_sass/layout/_warm.scss) */
+    --warm-surface                      : #{$dusk-800};
+    --warm-surface-alt                  : #{$dusk-700};
+    --warm-surface-sunk                 : #{$dusk-800};
+    --warm-accent                       : #{$ember-500};
+    --warm-accent-strong                : #{$ember-400};
+    --warm-accent-soft                  : #{$dusk-600};
+    --warm-heading                      : #{$ember-300};
+    --warm-hero-ink                     : #{$dusk-text};
+    --warm-hero-ink-soft                : #{$ember-300};
+    --warm-chip-bg                      : #{$dusk-700};
+    --warm-chip-ink                     : #{$ember-300};
+    --warm-shadow                       : 0 1px 2px rgba(0, 0, 0, 0.30), 0 8px 24px rgba(0, 0, 0, 0.35);
+    --warm-shadow-lift                  : 0 2px 6px rgba(0, 0, 0, 0.35), 0 16px 36px rgba(0, 0, 0, 0.45);
+    --warm-rule                         : linear-gradient(90deg, #{$ember-400}, #{$ember-600} 45%, rgba(207, 106, 99, 0));
+    --warm-page-wash                    : radial-gradient(1100px 520px at 12% -6%, rgba(120, 62, 52, 0.40), rgba(29, 19, 21, 0) 68%),
+                                          radial-gradient(900px 460px at 92% 2%, rgba(103, 45, 52, 0.38), rgba(29, 19, 21, 0) 62%);
+    --warm-hero-wash                    : radial-gradient(760px 420px at 16% 8%, rgba(160, 84, 60, 0.55), rgba(160, 84, 60, 0) 70%),
+                                          radial-gradient(620px 380px at 82% 12%, rgba(124, 46, 58, 0.55), rgba(124, 46, 58, 0) 68%),
+                                          linear-gradient(118deg, #3a2224 0%, #4a2628 45%, #5d2f31 72%, #35201f 100%);
+    --warm-btn-gradient                 : linear-gradient(135deg, #{$ember-500} 0%, #a33f49 100%);
+    --warm-btn-gradient-hover           : linear-gradient(135deg, #{$ember-400} 0%, #{$ember-600} 100%);
 }

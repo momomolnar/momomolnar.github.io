@@ -4,7 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 header:
-  image: /images/IMG_4212.jpg
+  overlay_color: "#f6d9c6"
   caption: "Solar Physics • Spectropolarimetry • Machine Learning"
 ---
 
@@ -16,10 +16,6 @@ header:
   <a href="{{ site.author.googlescholar }}">Google Scholar</a>
   and my <a href="{{ base_path }}/files/cv.pdf">full CV (PDF)</a>.
 </p>
-
-{% if site.author.googlescholar %}
-  <p class="wordwrap"><a href="{{ site.author.googlescholar }}">View Google Scholar profile</a></p>
-{% endif %}
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% assign current_year = "" %}

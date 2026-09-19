@@ -157,6 +157,48 @@
   "references": [],
   "publications": [
     {
+      "name": "Spherical PINN-ME inversions: combining SO/PHI and HMI",
+      "publisher": "Astrophysical Journal Letters (in prep.)",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Jarolim, R., Molnar, M., et al."
+    },
+    {
+      "name": "2024 coordinated eclipse observations: making a heliospheric energy budget",
+      "publisher": "Nature Astronomy (under review)",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "Rivera, Y., ..., Molnar, M., et al."
+    },
+    {
+      "name": "Abundance analysis of the M7.6 flare observed on September 30, 2024: a tale of multithermal plasma abundance evolution",
+      "publisher": "Astrophysical Journal (under review)",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "Molnar, M., Plowman, J., et al."
+    },
+    {
+      "name": "Observations of eruptive prominences in the middle corona with UCoMP in He I 1083",
+      "publisher": "Solar Physics (under review)",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Pistelli, C., Molnar, M., de Toma, G."
+    },
+    {
+      "name": "Unprecedented flare ribbon fine structuring observed with Solar Orbiter",
+      "publisher": "Astrophysical Journal (under review)",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Patel, R., Molnar, M., Seaton, D., et al."
+    },
+    {
+      "name": "Under one Arkansas sky: bridging science and community in rural America",
+      "publisher": "Frontiers in Astronomy and Space Sciences",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "Shaver, S., ..., Molnar, M., et al.; 13, 1755162."
+    },
+    {
       "name": "Wave observations with the Cryo-NIRSP instruments at high resolution",
       "publisher": "Astrophysical Journal",
       "releaseDate": "2026-01-01",
@@ -171,21 +213,21 @@
       "summary": "Plowman, J., Hassler, D., Molnar, M., et al.; 706, 171."
     },
     {
-      "name": "FIP Bias in an Emerging Active Region as observed in SPICE Synoptic Observation",
+      "name": "FIP bias in an emerging active region as observed in SPICE synoptic observation",
       "publisher": "Astronomy and Astrophysics",
       "releaseDate": "2026-01-01",
       "website": "",
       "summary": "Varesano, T., Hassler, D., Zambrana Prado, N., Laming, J. M., Plowman, J., Molnar, M., Barczynski, K.; 706, 155."
     },
     {
-      "name": "Neutral Helium detection during the 2024 Solar Eclipse",
+      "name": "Neutral helium detection during the 2024 solar eclipse",
       "publisher": "Solar Physics",
       "releaseDate": "2025-01-01",
       "website": "",
       "summary": "Molnar, M., Casini, R., Bryans, P., Berkey, B., Tyson, K.; 300, 88."
     },
     {
-      "name": "PINN ME: A Physics-Informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields",
+      "name": "PINN ME: a physics-informed neural network framework for accurate Milne-Eddington inversions of solar magnetic fields",
       "publisher": "Astrophysical Journal Letters",
       "releaseDate": "2025-01-01",
       "website": "",
@@ -199,7 +241,7 @@
       "summary": "Morton, R., Molnar, M., Cranmer, S., Schad, T.; 982, 104."
     },
     {
-      "name": "Magnetic Diagnostics of Prominence Eruptions through the Hanle Effect of the He I 1083 nm Line",
+      "name": "Magnetic diagnostics of prominence eruptions through the Hanle effect of the He I 1083 nm line",
       "publisher": "Astrophysical Journal",
       "releaseDate": "2024-01-01",
       "website": "",
@@ -213,34 +255,90 @@
       "summary": "da Silva Santos, J. M., Molnar, M., Milic, I., de la Cruz Rodriguez, J., Reardon, K.; 976, 21."
     },
     {
-      "name": "MHD Wave Mode Conversion in the Solar Corona",
+      "name": "Multi-height magnetic field extrapolations in the solar corona",
+      "publisher": "Astrophysical Journal Letters",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": "Jarolim, R., Tremblay, B., Rempel, M., Molnar, M., Veronig, A., Thalmann, J., Podladchikova, T.; 963, 1, id. L21."
+    },
+    {
+      "name": "MHD wave mode conversion in the solar corona",
       "publisher": "Astrophysical Journal",
       "releaseDate": "2023-01-01",
       "website": "",
       "summary": "Cranmer, S., Molnar, M.; 955, 68."
     },
     {
-      "name": "Constraining the systematics of acoustic wave heating estimates in the solar chromosphere",
+      "name": "Constraining the systematics of (acoustic) wave heating estimates in the solar chromosphere",
       "publisher": "Astrophysical Journal",
       "releaseDate": "2023-01-01",
       "website": "",
       "summary": "Molnar, M., Cranmer, S., Reardon, K., Kowalski, A., Milic, I.; 945, 154."
+    },
+    {
+      "name": "Spatio-temporal comparisons of the hydrogen-alpha line width and ALMA 3 mm brightness temperature in the weak solar network",
+      "publisher": "Frontiers in Astronomy and Space Sciences",
+      "releaseDate": "2023-01-01",
+      "website": "",
+      "summary": "Tarr, L., Jaeggli, S., Kobelski, A., Molnar, M., Cauzzi, G., Reardon, K.; 9:978405."
+    },
+    {
+      "name": "Spectral inversions with IBIS and ALMA",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2022-01-01",
+      "website": "",
+      "summary": "Hoffmann, R., Reardon, K., Milic, I., Molnar, M., Chai, Y., Uitenbroek, H.; 933, 244."
+    },
+    {
+      "name": "High-frequency wave power observed in the chromosphere with IBIS and ALMA",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2021-01-01",
+      "website": "",
+      "summary": "Molnar, M., Cranmer, S., Reardon, K., Kowalski, A., Chai, Y., Gary, D.; 920, 125."
+    },
+    {
+      "name": "Spectral deconvolution with deep learning: removing the effects of spectral PSF broadening",
+      "publisher": "Frontiers in Astronomy and Space Sciences",
+      "releaseDate": "2020-01-01",
+      "website": "",
+      "summary": "Molnar, M., Reardon, K., Osborne, C., Milic, I.; 7 (29)."
+    },
+    {
+      "name": "Hi-C 2.1 observations of small-scale miniature-filament-eruption-like cool ejections in an active region plage",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2020-01-01",
+      "website": "",
+      "summary": "Sterling, A., Moore, R., Navdeep, P., Reardon, K., Molnar, M., et al.; 889 (2), 187."
+    },
+    {
+      "name": "Solar chromospheric temperature diagnostics: a joint ALMA-Halpha analysis",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2019-01-01",
+      "website": "",
+      "summary": "Molnar, M., Reardon, K., Chai, Y., Cauzzi, G., Uitenbroek, H., Gary, D., Cranmer, S.; 881, 99."
+    },
+    {
+      "name": "Evolution of cataclysmic variables and related binaries containing a white dwarf",
+      "publisher": "Astrophysical Journal",
+      "releaseDate": "2016-01-01",
+      "website": "",
+      "summary": "Kalomeni, B., Nelson, L., Rappaport, S., Molnar, M., et al.; 833, 17."
     }
   ],
   "presentations": [
     {
-      "name": "Case Western Reserve University Physics Colloquium",
+      "name": "Physics colloquium",
       "event": "Invited colloquium",
       "date": "2025-11-01",
-      "location": "Case Western Reserve University",
+      "location": "Case Western Reserve University, Cleveland, OH",
       "description": ""
     },
     {
-      "name": "Coronal Plasma Abundance Evolution during the M7.6 Flare observed on September 30 2024",
-      "event": "National Solar Observatory Colloquium",
+      "name": "Coronal plasma abundance evolution during the M7.6 flare observed on September 30, 2024",
+      "event": "Invited colloquium",
       "date": "2025-09-01",
-      "location": "Boulder, CO, USA",
-      "description": "Invited talk."
+      "location": "National Solar Observatory, Boulder, CO",
+      "description": ""
     },
     {
       "name": "Spectropolarimetry of the He I 1083: using the unsaturated Hanle effect for coronal magnetometry",
@@ -257,31 +355,227 @@
       "description": ""
     },
     {
-      "name": "SPICE Observations supporting the 2024 Eclipse",
+      "name": "SPICE observations supporting the 2024 eclipse",
       "event": "2nd 2024 Solar Eclipse Workshop",
       "date": "2025-08-01",
-      "location": "CfA, Boston, MA, USA",
+      "location": "CfA, Boston, MA",
       "description": ""
     },
     {
-      "name": "Analysis of the Solar Plasma Abundance Evolution During the M7.7 Flare Event of September 30, 2024",
-      "event": "AAS/SPD Meeting",
+      "name": "Analysis of the solar plasma abundance evolution during the M7.7 flare event of September 30, 2024",
+      "event": "AAS/SPD meeting (127.03)",
       "date": "2025-06-01",
-      "location": "USA",
+      "location": "",
       "description": ""
     },
     {
-      "name": "Spectropolarimetry across the solar atmosphere - Polarization as a solar magnetometer",
+      "name": "Solar coronal magnetic fields and Alfvenic waves as measured by DKIST/Cryo-NIRSP",
+      "event": "AAS/SPD meeting (113.04)",
+      "date": "2025-06-01",
+      "location": "Co-author with T. Schad et al.",
+      "description": ""
+    },
+    {
+      "name": "Spectropolarimetry across the solar atmosphere - polarization as a solar magnetometer",
       "event": "Institute of Astronomy Colloquium, Bulgarian Academy of Sciences",
       "date": "2025-04-01",
       "location": "Sofia, Bulgaria",
       "description": ""
     },
     {
-      "name": "Detection of Helium with the CHEESE eclipse experiment",
-      "event": "AGU Fall Meeting",
+      "name": "Studying the elemental abundance evolution during the September 30, 2024 flare with SPICE and EUI-HRI",
+      "event": "SPICE Instrument Consortium meeting",
+      "date": "2025-04-01",
+      "location": "Royal Observatory of Belgium, Brussels",
+      "description": ""
+    },
+    {
+      "name": "Milne-Eddington spectropolarimetric inversions with PINNs",
+      "event": "Machine Learning and Computer Vision in Heliophysics",
+      "date": "2025-04-01",
+      "location": "Sofia, Bulgaria",
+      "description": ""
+    },
+    {
+      "name": "Coronal He I 10830 observations during the total solar eclipse: evidence for terrestrial origin",
+      "event": "CfA Eclipse Workshop",
+      "date": "2025-02-01",
+      "location": "Boston, MA",
+      "description": ""
+    },
+    {
+      "name": "Detection of helium with the CHEESE eclipse experiment",
+      "event": "AGU Fall Meeting (SH54B-07)",
       "date": "2024-12-01",
-      "location": "Washington, DC, USA",
+      "location": "Washington, DC",
+      "description": ""
+    },
+    {
+      "name": "Spectropolarimetric inversions with physics informed neural networks",
+      "event": "AGU Fall Meeting (NG24A-08)",
+      "date": "2024-12-01",
+      "location": "Washington, DC",
+      "description": ""
+    },
+    {
+      "name": "Coronal He I 10830 observations during the total solar eclipse",
+      "event": "WHPI Mini-Eclipse workshop",
+      "date": "2024-11-01",
+      "location": "NSF UCAR, Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Spectropolarimetry through the solar atmosphere",
+      "event": "SwRI Solar Show-and-Tell",
+      "date": "2024-11-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Coronal magnetometry through the He I 1083 Hanle effect",
+      "event": "NSF NCAR/HAO Colloquium",
+      "date": "2024-10-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Physics informed neural networks for Milne-Eddington inversions",
+      "event": "IMPRS Solar Physics seminar",
+      "date": "2024-09-01",
+      "location": "Gottingen, Germany",
+      "description": ""
+    },
+    {
+      "name": "Physics informed neural networks for Milne-Eddington inversions",
+      "event": "Deep Learning Workshop, Rosseland Centre for Solar Physics (RoCS)",
+      "date": "2024-09-01",
+      "location": "Oslo, Norway",
+      "description": ""
+    },
+    {
+      "name": "Wave behavior observed in the corona with Cryo-NIRSP",
+      "event": "Boulder Solar Focus meeting (invited)",
+      "date": "2024-05-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Heating of the solar atmosphere from the photosphere to the corona",
+      "event": "Boulder Solar Focus meeting (invited)",
+      "date": "2023-11-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Coronal He I 1083.0 nm magnetometry",
+      "event": "UCoMP workshop, HAO",
+      "date": "2023-08-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Wave diagnostics in observations and 3D rMHD models",
+      "event": "Leibniz Institute for Solar Physics (KIS)",
+      "date": "2023-07-01",
+      "location": "Freiburg, Germany",
+      "description": ""
+    },
+    {
+      "name": "Comparing wave diagnostics in observations and 3D rMHD models",
+      "event": "IMPRS",
+      "date": "2023-07-01",
+      "location": "Gottingen, Germany",
+      "description": ""
+    },
+    {
+      "name": "Solar inversions for stellar applications",
+      "event": "Harvard/CfA SSP seminar",
+      "date": "2023-06-01",
+      "location": "Cambridge, MA",
+      "description": ""
+    },
+    {
+      "name": "Constraining the acoustic wave flux in the solar chromosphere with observations and simulations",
+      "event": "RoCMI workshop",
+      "date": "2023-02-01",
+      "location": "Svalbard, Norway",
+      "description": ""
+    },
+    {
+      "name": "Wave heating of the solar chromosphere - systematics and observations",
+      "event": "NSO Colloquium",
+      "date": "2022-11-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "Science with DKIST",
+      "event": "NAO Colloquium, Institute of Astronomy (invited)",
+      "date": "2022-08-01",
+      "location": "Bulgaria",
+      "description": ""
+    },
+    {
+      "name": "Wave heating of the solar chromosphere - systematics on the modeling approaches",
+      "event": "TESS meeting",
+      "date": "2022-08-01",
+      "location": "",
+      "description": ""
+    },
+    {
+      "name": "Chromospheric dynamics observed with ALMA",
+      "event": "Meeting of ALMA Young Astronomers, ESA",
+      "date": "2022-03-01",
+      "location": "Virtual",
+      "description": ""
+    },
+    {
+      "name": "Constraining the wave heating in the solar chromosphere",
+      "event": "HAO colloquium",
+      "date": "2021-11-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "High frequency wave heating constrained with IRIS",
+      "event": "Hinode-14/IRIS-11 meeting",
+      "date": "2021-10-01",
+      "location": "",
+      "description": ""
+    },
+    {
+      "name": "Wave heating of the solar chromosphere",
+      "event": "NSO Colloquium",
+      "date": "2021-09-01",
+      "location": "Boulder, CO",
+      "description": ""
+    },
+    {
+      "name": "High frequency waves in the solar atmosphere observed with IRIS, IBIS and ALMA",
+      "event": "IAGA (invited)",
+      "date": "2021-08-01",
+      "location": "",
+      "description": ""
+    },
+    {
+      "name": "Wave heating in the quiet solar chromosphere",
+      "event": "AAS/SPD meeting, iPoster talk",
+      "date": "2021-06-01",
+      "location": "",
+      "description": ""
+    },
+    {
+      "name": "DKIST synergies with ALMA",
+      "event": "Cool Stars 20 (invited)",
+      "date": "2018-07-01",
+      "location": "Boston, MA",
+      "description": ""
+    },
+    {
+      "name": "Probing the turbulent quiet chromosphere with ALMA, IRIS and IBIS",
+      "event": "IRIS-9 meeting, MPS",
+      "date": "2018-06-01",
+      "location": "Gottingen, Germany",
       "description": ""
     }
   ],
@@ -292,21 +586,42 @@
       "category": "grant",
       "date": "2024-10-01",
       "url": "",
-      "description": "Principal Investigator, October 2024 - October 2026."
+      "description": "Principal Investigator, $394k, October 2024 - October 2026."
     },
     {
       "name": "NCAR Advanced Study Program Postdoctoral Fellowship",
       "category": "fellowship",
       "date": "2022-10-01",
       "url": "",
-      "description": "October 2022 - September 2024."
+      "description": "$300k, October 2022 - September 2024."
+    },
+    {
+      "name": "Chance Irick Cooke Fellowship",
+      "category": "fellowship",
+      "date": "2022-01-01",
+      "url": "",
+      "description": "University of Colorado Boulder, $3,000, 2022."
     },
     {
       "name": "NASA FINESST Fellowship",
       "category": "fellowship",
       "date": "2020-09-01",
       "url": "",
-      "description": "September 2020 - August 2022."
+      "description": "Future Investigators in NASA Earth and Space Science and Technology, $90k, September 2020 - August 2022."
+    },
+    {
+      "name": "DKIST Ambassador Graduate Fellowship",
+      "category": "fellowship",
+      "date": "2019-08-01",
+      "url": "",
+      "description": "National Solar Observatory, $110k, August 2019 - August 2022."
+    },
+    {
+      "name": "Hale Graduate Fellowship",
+      "category": "fellowship",
+      "date": "2016-08-01",
+      "url": "",
+      "description": "University of Colorado Boulder, $160k, August 2016 - August 2019."
     }
   ]
 }
