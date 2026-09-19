@@ -44,7 +44,7 @@ Before joining SwRI in October 2024, I was an Advanced Study Program Postdoctora
 
 ## Currently
 
-* **PI**, NSF SHINE grant 2401069 &mdash; $394k, October 2024 &ndash; October 2026
+* **PI**, NSF SHINE grant 2401069 &mdash; October 2024 &ndash; October 2026
 * **PI**, the CHEESE experiment, which searched for coronal He&nbsp;I 1083&nbsp;nm emission during the April 8, 2024 total solar eclipse
 * Solar Orbiter/SPICE science, including abundance-evolution studies of the September 30, 2024 flare
 

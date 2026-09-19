@@ -101,30 +101,29 @@ redirect_from:
 
 For a continuously updated list, see [Google Scholar]({{ site.author.googlescholar }}) or the [publications page]({{ base_path }}/publications/).
 
-1. Jarolim, R., **Molnar, M.**, et al., "Spherical PINN-ME inversions: combining SO/PHI and HMI", 2026, *Astrophys. J. Lett.*, in prep.
-2. Rivera, Y., ..., **Molnar, M.**, et al., 2025, "2024 coordinated eclipse observations: making a heliospheric energy budget", *Nature Astronomy*, under review.
-3. **Molnar, M.**, Plowman, J., et al., 2025, "Abundance analysis of the M7.6 flare observed on September 30, 2024: a tale of multithermal plasma abundance evolution", *Astrophys. J.*, under review.
-4. Pistelli, C., **Molnar, M.**, de Toma, G., 2026, "Observations of eruptive prominences in the middle corona with UCoMP in He I 1083", *Solar Physics*, under review.
-5. Patel, R., **Molnar, M.**, Seaton, D., et al., 2026, "Unprecedented flare ribbon fine structuring observed with Solar Orbiter", *Astrophys. J.*, under review.
-6. Shaver, S., ..., **Molnar, M.**, et al., 2026, "Under one Arkansas sky: bridging science and community in rural America", *Front. Astron. Space Sci.*, 13, 1755162.
-7. **Molnar, M.**, Gilly, C., Morton, R., et al., 2026, "Wave observations with the Cryo-NIRSP instruments at high resolution", *Astrophys. J.*, 999, 34.
-8. Plowman, J., Hassler, D., **Molnar, M.**, et al., 2026, "A new method of deriving Doppler velocities for Solar Orbiter SPICE", *Astron. Astrophys.*, 706, 171.
-9. Varesano, T., Hassler, D., Zambrana Prado, N., Laming, J. M., Plowman, J., **Molnar, M.**, Barczynski, K., 2026, "FIP bias in an emerging active region as observed in SPICE synoptic observation", *Astron. Astrophys.*, 706, 155.
-10. **Molnar, M.**, Casini, R., Bryans, P., Berkey, B., Tyson, K., 2025, "Neutral helium detection during the 2024 solar eclipse", *Solar Physics*, 300, 88.
-11. Jarolim, R., **Molnar, M.**, Tremblay, B., Centeno, R., Rempel, M., 2025, "PINN ME: a physics-informed neural network framework for accurate Milne-Eddington inversions of solar magnetic fields", *Astrophys. J. Lett.*, 985, L7.
-12. Morton, R., **Molnar, M.**, Cranmer, S., Schad, T., 2025, "First DKIST Cryo-NIRSP wave observations", *Astrophys. J.*, 982, 104.
-13. **Molnar, M.**, Casini, R., 2024, "Magnetic diagnostics of prominence eruptions through the Hanle effect of the He I 1083 nm line", *Astrophys. J.*, 977, 1.
-14. da Silva Santos, J. M., **Molnar, M.**, Milić, I., de la Cruz Rodriguez, J., Reardon, K., 2024, "Constraining the balance of radiative losses and acoustic flux in the solar chromosphere with multi-line spectral inversions", *Astrophys. J.*, 976, 21.
-15. Jarolim, R., Tremblay, B., Rempel, M., **Molnar, M.**, Veronig, A., Thalmann, J., Podladchikova, T., 2024, "Multi-height magnetic field extrapolations in the solar corona", *Astrophys. J. Lett.*, 963, 1, id. L21, 13 pp.
-16. Cranmer, S., **Molnar, M.**, 2023, "MHD wave mode conversion in the solar corona", *Astrophys. J.*, 955, 68.
-17. **Molnar, M.**, Cranmer, S., Reardon, K., Kowalski, A., Milić, I., 2023, "Constraining the systematics of (acoustic) wave heating estimates in the solar chromosphere", *Astrophys. J.*, 945, 154.
-18. Tarr, L., Jaeggli, S., Kobelski, A., **Molnar, M.**, Cauzzi, G., Reardon, K., 2023, "Spatio-temporal comparisons of the hydrogen-alpha line width and ALMA 3 mm brightness temperature in the weak solar network", *Front. Astron. Space Sci.*, 9:978405, doi:10.3389/fspas.2022.978405.
-19. Hoffmann, R., Reardon, K., Milić, I., **Molnar, M.**, Chai, Y., Uitenbroek, H., 2022, "Spectral inversions with IBIS and ALMA", *Astrophys. J.*, 933, 244.
-20. **Molnar, M.**, Cranmer, S., Reardon, K., Kowalski, A., Chai, Y., Gary, D., 2021, "High-frequency wave power observed in the chromosphere with IBIS and ALMA", *Astrophys. J.*, 920, 125.
-21. **Molnar, M.**, Reardon, K., Osborne, C., Milić, I., 2020, "Spectral deconvolution with deep learning: removing the effects of spectral PSF broadening", *Front. Astron. Space Sci.*, 7 (29), doi:10.3389/fspas.2020.00029.
-22. Sterling, A., Moore, R., Navdeep, P., Reardon, K., **Molnar, M.**, et al., 2020, "Hi-C 2.1 observations of small-scale miniature-filament-eruption-like cool ejections in an active region plage", *Astrophys. J.*, 889 (2), 187.
-23. **Molnar, M.**, Reardon, K., Chai, Y., Cauzzi, G., Uitenbroek, H., Gary, D., Cranmer, S., 2019, "Solar chromospheric temperature diagnostics: a joint ALMA-H&alpha; analysis", *Astrophys. J.*, 881, 99.
-24. Kalomeni, B., Nelson, L., Rappaport, S., **Molnar, M.**, et al., 2016, "Evolution of cataclysmic variables and related binaries containing a white dwarf", *Astrophys. J.*, 833, 17.
+1. Rivera, Y., ..., **Molnar, M.**, et al., 2025, "2024 coordinated eclipse observations: making a heliospheric energy budget", *Nature Astronomy*, under review.
+2. **Molnar, M.**, Plowman, J., et al., 2025, "Abundance analysis of the M7.6 flare observed on September 30, 2024: a tale of multithermal plasma abundance evolution", *Astrophys. J.*, under review.
+3. Pistelli, C., **Molnar, M.**, de Toma, G., 2026, "Observations of eruptive prominences in the middle corona with UCoMP in He I 1083", *Solar Physics*, under review.
+4. Patel, R., **Molnar, M.**, Seaton, D., et al., 2026, "Unprecedented flare ribbon fine structuring observed with Solar Orbiter", *Astrophys. J.*, under review.
+5. Shaver, S., ..., **Molnar, M.**, et al., 2026, "Under one Arkansas sky: bridging science and community in rural America", *Front. Astron. Space Sci.*, 13, 1755162.
+6. **Molnar, M.**, Gilly, C., Morton, R., et al., 2026, "Wave observations with the Cryo-NIRSP instruments at high resolution", *Astrophys. J.*, 999, 34.
+7. Plowman, J., Hassler, D., **Molnar, M.**, et al., 2026, "A new method of deriving Doppler velocities for Solar Orbiter SPICE", *Astron. Astrophys.*, 706, 171.
+8. Varesano, T., Hassler, D., Zambrana Prado, N., Laming, J. M., Plowman, J., **Molnar, M.**, Barczynski, K., 2026, "FIP bias in an emerging active region as observed in SPICE synoptic observation", *Astron. Astrophys.*, 706, 155.
+9. **Molnar, M.**, Casini, R., Bryans, P., Berkey, B., Tyson, K., 2025, "Neutral helium detection during the 2024 solar eclipse", *Solar Physics*, 300, 88.
+10. Jarolim, R., **Molnar, M.**, Tremblay, B., Centeno, R., Rempel, M., 2025, "PINN ME: a physics-informed neural network framework for accurate Milne-Eddington inversions of solar magnetic fields", *Astrophys. J. Lett.*, 985, L7.
+11. Morton, R., **Molnar, M.**, Cranmer, S., Schad, T., 2025, "First DKIST Cryo-NIRSP wave observations", *Astrophys. J.*, 982, 104.
+12. **Molnar, M.**, Casini, R., 2024, "Magnetic diagnostics of prominence eruptions through the Hanle effect of the He I 1083 nm line", *Astrophys. J.*, 977, 1.
+13. da Silva Santos, J. M., **Molnar, M.**, Milić, I., de la Cruz Rodriguez, J., Reardon, K., 2024, "Constraining the balance of radiative losses and acoustic flux in the solar chromosphere with multi-line spectral inversions", *Astrophys. J.*, 976, 21.
+14. Jarolim, R., Tremblay, B., Rempel, M., **Molnar, M.**, Veronig, A., Thalmann, J., Podladchikova, T., 2024, "Multi-height magnetic field extrapolations in the solar corona", *Astrophys. J. Lett.*, 963, 1, id. L21, 13 pp.
+15. Cranmer, S., **Molnar, M.**, 2023, "MHD wave mode conversion in the solar corona", *Astrophys. J.*, 955, 68.
+16. **Molnar, M.**, Cranmer, S., Reardon, K., Kowalski, A., Milić, I., 2023, "Constraining the systematics of (acoustic) wave heating estimates in the solar chromosphere", *Astrophys. J.*, 945, 154.
+17. Tarr, L., Jaeggli, S., Kobelski, A., **Molnar, M.**, Cauzzi, G., Reardon, K., 2023, "Spatio-temporal comparisons of the hydrogen-alpha line width and ALMA 3 mm brightness temperature in the weak solar network", *Front. Astron. Space Sci.*, 9:978405, doi:10.3389/fspas.2022.978405.
+18. Hoffmann, R., Reardon, K., Milić, I., **Molnar, M.**, Chai, Y., Uitenbroek, H., 2022, "Spectral inversions with IBIS and ALMA", *Astrophys. J.*, 933, 244.
+19. **Molnar, M.**, Cranmer, S., Reardon, K., Kowalski, A., Chai, Y., Gary, D., 2021, "High-frequency wave power observed in the chromosphere with IBIS and ALMA", *Astrophys. J.*, 920, 125.
+20. **Molnar, M.**, Reardon, K., Osborne, C., Milić, I., 2020, "Spectral deconvolution with deep learning: removing the effects of spectral PSF broadening", *Front. Astron. Space Sci.*, 7 (29), doi:10.3389/fspas.2020.00029.
+21. Sterling, A., Moore, R., Navdeep, P., Reardon, K., **Molnar, M.**, et al., 2020, "Hi-C 2.1 observations of small-scale miniature-filament-eruption-like cool ejections in an active region plage", *Astrophys. J.*, 889 (2), 187.
+22. **Molnar, M.**, Reardon, K., Chai, Y., Cauzzi, G., Uitenbroek, H., Gary, D., Cranmer, S., 2019, "Solar chromospheric temperature diagnostics: a joint ALMA-H&alpha; analysis", *Astrophys. J.*, 881, 99.
+23. Kalomeni, B., Nelson, L., Rappaport, S., **Molnar, M.**, et al., 2016, "Evolution of cataclysmic variables and related binaries containing a white dwarf", *Astrophys. J.*, 833, 17.
 
 ## White Papers and Other Non-Refereed Publications
 
@@ -139,37 +138,37 @@ For a continuously updated list, see [Google Scholar]({{ site.author.googleschol
 
 <div class="cv-card">
   <h3 class="cv-card__title">NSF SHINE Grant 2401069</h3>
-  <p class="cv-card__meta">PI &middot; $394k</p>
+  <p class="cv-card__meta">PI</p>
   <p class="cv-card__when">October 2024 &ndash; October 2026</p>
 </div>
 
 <div class="cv-card">
   <h3 class="cv-card__title">Advanced Study Program Postdoctoral Fellowship</h3>
-  <p class="cv-card__meta">NCAR postdoctoral fellowship &middot; $300k</p>
+  <p class="cv-card__meta">NCAR postdoctoral fellowship</p>
   <p class="cv-card__when">October 2022 &ndash; September 2024</p>
 </div>
 
 <div class="cv-card">
   <h3 class="cv-card__title">Chance Irick Cooke Fellowship</h3>
-  <p class="cv-card__meta">University of Colorado, Boulder &middot; $3,000</p>
+  <p class="cv-card__meta">University of Colorado, Boulder</p>
   <p class="cv-card__when">2022</p>
 </div>
 
 <div class="cv-card">
   <h3 class="cv-card__title">Future Investigators in NASA Earth and Space Science and Technology (FINESST)</h3>
-  <p class="cv-card__meta">NASA fellowship &middot; $90k</p>
+  <p class="cv-card__meta">NASA fellowship</p>
   <p class="cv-card__when">September 2020 &ndash; August 2022</p>
 </div>
 
 <div class="cv-card">
   <h3 class="cv-card__title">DKIST Ambassador Graduate Fellowship</h3>
-  <p class="cv-card__meta">National Solar Observatory fellowship &middot; $110k</p>
+  <p class="cv-card__meta">National Solar Observatory fellowship</p>
   <p class="cv-card__when">August 2019 &ndash; August 2022</p>
 </div>
 
 <div class="cv-card">
   <h3 class="cv-card__title">Hale Graduate Fellowship</h3>
-  <p class="cv-card__meta">University of Colorado, Boulder &middot; $160k</p>
+  <p class="cv-card__meta">University of Colorado, Boulder</p>
   <p class="cv-card__when">August 2016 &ndash; August 2019</p>
 </div>
 
